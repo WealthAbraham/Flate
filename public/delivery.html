@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <link rel="shortcut icon" href="LogiHub.png" type="image/x-icon">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+    <script type="text/babel" src="like_widget.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="delivery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+    // Get a reference to the button element
+    const paymentButton = document.getElementById('payss');
+
+    // Add a click event listener to the button
+    paymentButton.addEventListener('click', function() {
+        // Redirect to the payment.html page
+        window.location.href = 'payment.html';
+    });
+</script>
+
+<body id="container>
+    <div class="container" >
+        <div class="topnav">
+            <div class="logo">
+                <img src="LogiHub.png" alt="LogiHub_Logo">
+            </div>
+            <div class="rolmid">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="split.html">Become a Vendor</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="ppic">
+                <a href="profile">
+                    <img src="profilepp.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+            <div class="content">
+                <div class="toptext">
+                    <h3>
+                        Request  Parcel Delivery
+                    </h3>
+                </div>
+                <div class="details">
+                    <div class="stage">
+                        <h2 href="delivery.html">1</h2><hr> <h2 href="payment.html">2 </h2><hr><h2 href="confirm.html">3</h2>
+                    </div>
+                    <div class="place">
+                        <h2 class="pri1">Shipping </h2><hr> <h2 class="pri2">Payment  </h2><hr><h2 class="pri3">Confirmation</h2>
+                    </div>
+                </div>
+            <div class="forms">
+                <div class="form1" id="form1">
+                    <h3>Pickup Details</h3>
+                    <hr style="border: 1px solid black;">
+                    <form action="">
+                    <label for="name">Customer Name<span style="color: red;">*</span></label>
+                    <br>
+                    <input type="text" class="name" name="name" required>
+                    <br>
+                    <label for="email">Email<span style="color: red;">*</span></label>
+                    <br>
+                    <input type="email" class="email" name="email" required>
+                    <br>
+                    <label for="tel">Pickup Phone Number</label>
+                    <br>
+                   <div class="pot">
+                    <select name="code" id="code"  required>
+                        <option value="+234" selected>+234</option>
+                        <option value="+233">+233</option>
+                    </select>
+                    <input type="tel" name="tel" id="tel" class="tel" required>
+                    <br>
+                   </div>
+                    <label for="address">Pickup Address</label>
+                    <br>
+                    <input type="text" class="address" name="address" required>
+                    <br>
+                    <br>
+                    <label for="category">Category</label>
+                    <br>
+                    <select name="category" id="category" required>
+                        <option value="Select Category" disabled selected hidden>Select Category</option>
+                        <option value="Goods">Goods</option>
+                        <option value="Service">Services</option>
+                    </select>
+                    <br>
+                    
+                    </form>
+                </div>
+                <div class="form2" id="form1">
+                    <h3>Delivery Point 1</h3>
+                    <hr style="border: 1px solid black;">
+                    <form action="">
+                        <label for="name2">Recipient Name<span style="color: red;">*</span></label>
+                        <br>
+                        <input type="text" class="name2" name="name2">
+                        <br>
+                        
+                        <label for="tel">Pickup Phone Number</label>
+                        <br>
+                       <div class="pot">
+                        <select name="code" id="code" >
+                            <option value="+234"  id="code">+234</option>
+                            <option value="+233">+233</option>
+                        </select>
+                        <input type="tel" name="tel" id="tel" class="tel">
+                        <br>
+                        <br>
+                       </div>
+                         <a href="#"> <p style="font-weight: lighter; color:rgb(201, 201, 201);"><span style="font-weight: bolder; color: black;">+</span> Add Pickup Address</p></a>
+                        <label for="address">Pickup Address</label>
+                        
+                        <br>
+                        <input type="text" class="address" name="address">
+                        <br>
+                        <div class="none" style="display: none;">
+                            <label for="name2">Recipient Name<span style="color: red;">*</span></label>
+                        <br>
+                        <input type="text" class="name2" name="name2">
+                     
+                        </div> 
+                        <br>
+                                                <br><label for="name2">Pickup Time<span style="color: red;">*</span></label>
+                        <br>
+                        <input type="datetime-local" class="name2" placeholder="Now  " name="name2">
+                        <br>
+                        
+                        
+                        </form>
+                    <br>
+            <br>
+            <br>
+            
+                </div>
+                
+            </div>
+            <div class="submit" style="text-align: center;">
+                <button value="submit" id="payss" class="Proceed" style=" background-color: #0077B6; color: white; border-radius: 7px ; border: none; padding-top: 7px ; padding-bottom: 7px; padding-left: 10px ; padding-right: 10px;">
+                    <a href="payment.html" style="color: white; text-decoration: none;">Proceed</a>
+                </button>
+            </div>
+            
+       </div>
+        <footer>
+            <div class="footdiv">
+                <div class="lass">
+                    <div class="ggrd">
+                        <h4>
+                            LOGIHUB<sup>&reg;</sup>
+                        </h4>
+                        <p><img src="Frame 40.png" alt=""></p>
+                    </div>
+                    <div class="ggrd"><h5>Company</h5><p>
+                        Contact us
+                    </p>
+                    </div>
+                    <div class="ggrd">
+                        <h5>Legal</h5><p>
+                            Privacy Policy
+                        </p>
+                        <p>Terms of Service</p>
+                    </div>
+                    <div class="ggrd">
+                        <h5>Help</h5>
+                        <p>Read our FAQs</p>
+                    </div>
+                </div>
+                <hr>
+                <p>Copyright&copy; 2024 LogiHub<sup>&reg;</sup>. All rights reserved.</p>
+
+            </div>
+        </footer>
+    </div>
+    </body>
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            // Show loader initially
+            document.getElementById("loader").style.display = "block";
+            document.getElementById("container").style.visibility = "hidden";
+            document.getElementById("container").style.display = "none";
+    
+            // Hide loader after 1 second
+            setTimeout(function() {
+                document.getElementById("loader").style.display = "none";
+            }, 1000); // 1000 milliseconds = 1 second
+        });
+    </script>
+    
+    <div class="loader" id="loader"></div>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+.toprow {
+    display: flex;
+    min-width: 100vw;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 1;
+    left: 1;
+    flex: 1;
+    color: #00095b;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.mobile {
+    display: none;
+}
+
+body {
+    margin-left: none;
+    padding-left: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: none;
+    display: block;
+    flex: 1;
+    margin-left: none;
+    padding-left: none;
+}
+
+ul {
+    list-style-type: none;
+    list-style: none;
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+ul li a {
+    text-decoration: none;
+    white-space: nowrap;
+    padding-left: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-right: 4px;
+    font-size: 1.2em;
+}
+
+ul li a:hover {
+    text-decoration: navy;
+    font-weight: bold;
+}
+
+.forrms {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.logo {
+    text-align: left;
+    flex: 1;
+}
+
+.mid {
+    text-align: center;
+    flex: 3;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.ort{
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: right;
+    align-self: stretch;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.bright{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+body {
+    margin-left: none;
+    padding-left: none;
+    height: 100vh;
+    width: 100vw;
+}
+.desk{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.ort{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.bright {
+    text-align: right;
+    flex: 1;
+}
+
+.whitea, .blacktea {
+    width: 100vw;
+    height: 100vh;
+    flex: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.whitea {
+    background-color: white;
+}
+
+.blacktea {
+    background-color: #0C1534;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.whitea .toprow {
+    max-width: 10vw;
+    position: relative;
+    display: hidden;
+    flex-shrink: 1;
+}
+
+.whitea .start {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.whitea {
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    background-color: white;
+    width: 50vw;
+    height: 100vh;
+    margin: none;
+    flex: 1;
+    flex-direction: column;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+    text-align: center; /* Center the text horizontally */
+}
+
+.forrms {
+    display: flex;
+}
+
+button, .register {
+    background-color: #0077B6;
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+    color: white;
+}
+
+button a {
+    color: white;
+}
+
+.toprow ul li a {
+    font-size: 1em;
+}
+
+.register {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .forrms {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .whitea, .blacktea {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        min-width: 100%;
+    }
+    
+    /* Dropdown container */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Dropdown button */
+    .dropbtn {
+        background-color: #0077B6;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        text-shadow: 1px 1px 4px black;
+        font-weight: bolder;
+    }
+    
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #3e8e41;
+    }
+    
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #E6E6FA;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: #0077B6;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #0077B6;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    /* Style the dropdown button if needed */
+    .dropdown-content a.register {
+        color: white;
+    }
+    
+    .mid, .bright {
+        display: none;
+    }
+    
+    .toprow {
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: space-between;
+        color: black;
+        display: flex;
+        flex: 1;
+        margin-right: 10px;
+        position: relative;
+    }
+    
+    .ort {
+        flex: 1;
+        text-align: right;
+    }
+  .mobile {
+      display: block;
+      padding-right: 0px;
+      margin-right: 0;
+  }
+  .ort{
+      padding: none;
+      margin: none;
+      text-align: right;
+      
+  }
+}

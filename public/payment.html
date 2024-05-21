@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Payment</title>
+    <link rel="shortcut icon" href="LogiHub.png" type="image/x-icon">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+    <script type="text/babel" src="like_widget.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Your existing CSS code */
+
+/* Hide the default radio button */
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Style the label to make it clickable */
+input[type="radio"] + label {
+    display: inline-block;
+    padding-left: 20px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+/* Style the label when the associated radio button is checked */
+input[type="radio"]:checked + label {
+    font-weight: bold; /* Example styling, adjust as needed */
+    color: white; /* Example styling, adjust as needed */
+    background-color:#0077B6 ;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <div class="logo">
+                <img src="LogiHub.png" alt="LogiHub_Logo">
+            </div>
+            <div class="rolmid">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="split.html">Become a Vendor</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="ppic">
+                <a href="profile">
+                    <img src="profilepp.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+            <div class="content">
+                <div class="toptext">
+                    <h3>
+                        Request  Parcel Delivery
+                    </h3>
+                </div>
+                <div class="details">
+                    <div class="stage">
+                        <h2 href="delivery.html">1</h2><hr> <h2 href="payment.html" class="here">2 </h2><hr><h2 href="confirm.html">3</h2>
+                    </div>
+                    <div class="place">
+                        <h2 class="pri1">Shipping </h2><hr> <h2 class="pri2">Payment  </h2><hr><h2 class="pri3">Confirmation</h2>
+<br>
+<br><br><br>
+</div>
+
+<br><br>
+<div class="colom">
+     <div class="press">
+                <div class="dest" style="text-align:right; font-weight:bold;">
+                <p>Pickup</p>
+                <br>
+                <p>D1</p>
+               </div>
+               <div class="shape">
+                   <p>
+                       <img src="Group 4.png" alt=""><br>
+                   </p>
+                   <div class="link"></div>
+                   <p>
+                       <img src="Vector.png" alt=""></img>
+                   </p>
+               </div>
+    <div class="left">
+        <div class="locat">
+           
+            </div>
+            <div class="fieldet">
+                <input class="addressed" type="text" placeholder="Magic Land, No. 1, Kukwaba Hills, Constitution Ave, Wuye, Abuja" disabled>
+                <br>
+                <input type="text" placeholder="Jabi Lake Mall, Bala Sokoto Way, Jabi 900108, Abuja" disabled>
+            </div>
+             <div class="doww">
+            <div class="ldoww">
+                <h6>
+                    Gokada
+                </h6>
+                <h6 style="color:#020231B2;font-weight:lighter;">35km • 20min</h6>
+                <h6>2min away from you</h6>
+                
+            </div>
+            <div class="rdoww">
+                    <h4 style="color:#0077B6 ;">₦1,700</h4>
+                    
+                </div>
+        </div>
+        <hr>
+        <div class="doww">
+            <div class="ldoww">
+                <h6>
+                    Kwiky
+                </h6>
+                <h6 style="color:#020231B2;font-weight:lighter;">35km • 20min</h6>
+                <h6>30sec away from you</h6>
+                
+            </div>
+            <div class="rdoww">
+                    <h4 style="color:#0077B6 ;">₦2,500</h4>
+                </div>
+                 
+        </div>
+       <hr>
+        <div class="doww">
+            <div class="ldoww">
+                <h6>
+                    Errand
+                </h6>
+                <h6 style="color:#020231B2; font-weight:lighter;">35km • 20min</h6>
+                <h6>5min away from you</h6>
+                
+            </div>
+            
+            <div class="rdoww">
+                    <h4 style="color:#0077B6 ;">₦1,000</h4>
+                </div>
+        </div>
+        <hr>
+        <div class="doww">
+            <div class="ldoww">
+                <h6>
+                    Kiakia
+                </h6>
+                <h6 style="color:#020231B2;font-weight:lighter; ">35km • 20min</h6>
+                <h6>29min away from you</h6>
+                
+            </div>
+            
+            <div class="rdoww">
+                    <h4 style="color:#0077B6 ;">₦700</h4>
+                </div>
+        </div>
+        <hr>
+       
+        </div>
+    </div>
+
+    <div class="right">
+    <h5>Payment Method</h5>
+    <hr>
+    <p>
+        <input type="radio" id="cardPayment" name="paymentMethod" value="card">
+        <label for="cardPayment"><img src="card.png" alt=""> Card Payment</label>
+    </p>
+    <p >
+        <input type="radio" id="bankTransfer" name="paymentMethod" value="bank">
+        <label for="bankTransfer"><img src="bank.png" alt=""> Bank Transfer</label>
+    </p>
+    <p>
+        <input type="radio" id="cashOnDelivery" name="paymentMethod" value="cash">
+        <label for="cashOnDelivery"><img src="cash.png" alt=""> Cash on Delivery</label>
+    </p>
+</form>
+    <div class="submit" style="text-align: center;">
+                <button class="Proceed" style=" background-color: #0077B6; color: white; border-radius: 3px ; border: none; padding-top: 1px ; padding-bottom: 1px; padding-left: 10px ; padding-right: 10px;">
+                    <a href="confirm.html" style="color: white; text-decoration: none; ">Proceed</a>
+                </button>
+            </div>
+    </div>
+</div>
+
+
+           
+            
+       </div>
+        <footer>
+            <div class="footdiv">
+                <div class="lass">
+                    <div class="ggrd">
+                        <h4>
+                            LOGIHUB<sup>&reg;</sup>
+                        </h4>
+                        <p><img src="Frame 40.png" alt=""></p>
+                    </div>
+                    <div class="ggrd"><h5>Company</h5><p>
+                        Contact us
+                    </p>
+                    </div>
+                    <div class="ggrd">
+                        <h5>Legal</h5><p>
+                            Privacy Policy
+                        </p>
+                        <p>Terms of Service</p>
+                    </div>
+                    <div class="ggrd">
+                        <h5>Help</h5>
+                        <p>Read our FAQs</p>
+                    </div>
+                </div>
+                <hr>
+                <p>Copyright&copy; 2024 LogiHub<sup>&reg;</sup>. All rights reserved.</p>
+
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+    // Make a GET request to fetch user's address
+    $.get("/user/address", function(data) {
+        // Check if the response contains the address
+        if (data.address) {
+            // Populate the input field with the fetched address
+            $(".addressed").val(data.address);
+        } else {
+            console.error("User's address not found");
+        }
+    }).fail(function() {
+        console.error("Failed to fetch user's address");
+    });
+});
+
+</script>
+</html>

@@ -1,0 +1,357 @@
+body{
+    height: 100svh;
+    width: auto;
+    display: block;
+}
+
+.container{
+    height: 100svh;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    padding: none ;
+    
+}
+.topnav{
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    min-width: 100vw;
+    height: fit-content;
+    flex-direction: row;
+    max-width: 100vw;
+    position: relative;
+    top: 1;
+    left: 1;
+    flex-shrink:1 ;    
+}
+.logo{
+    flex: 1;
+    float: left;
+    text-align: left;
+}
+.rolmid{
+    flex-direction: unset;
+    flex: 5;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+}
+.ppic{
+    flex: 2;
+    float: right;
+    position: relative;
+}
+.rolmid ul{
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+    color: #020231;
+}
+.rolmid ul li{
+    margin: 0 10px 0 10px ;
+    padding-left: 10px ;
+}
+.rolmid ul li a{
+    color: #020231;
+    margin-top: 10px;
+}
+.rolmid ul li a:hover{
+    text-decoration: none;
+    background-color: #0077B6;
+    padding: 4px ;
+    border-radius: 4px ;
+    color: white;
+    
+}
+.ppic a img {
+    border-radius: 100px;
+    width: 3em; /* Set width to fill the container */
+    height: 3em; /* Maintain aspect ratio */
+    position: relative;
+     /* Float the image to the right */
+    border: 1px solid rgb(214, 214, 214);
+    top: 1;
+    right: 1;
+}
+.ppic a img:hover {
+    box-shadow: 1px 1px 8px #0077B6;
+    border: none;
+}
+.ppic a {
+    position: relative;
+    width: 200px; /* Set width to a specific value or adjust as needed */
+    height: 20px; /* Set height to match the width for a square aspect ratio */
+    overflow: hidden; /* Ensure image doesn't overflow the container */
+    top: 1;
+}
+
+.gallery .item{
+    max-width: 100%;
+    display: block;
+}
+.item{
+    margin: 0 ;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    min-width: fit-content;
+    max-width: 100%;
+    flex: 1;
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.prime img{
+    height: 100%;
+    width: 100%;
+    top: 1;
+    left: 1;
+    position: relative;
+}
+.prime:hover{
+    box-shadow: 2px 2px 2px #f6bb0a;
+}
+.prime{
+    width: auto;
+    height: 100%;
+    margin: 2em;
+    overflow: hidden;
+    position: relative;
+    width: 40em; /* Set width to fill the available space */
+    height: 40em; /* Set initial height to 0 */
+    border-radius: 20px;
+}
+.item:hover{
+    box-shadow: 1px 1px 9px rgb(0, 52, 64) ;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 226, 7);
+}
+.point{
+    display: block;
+    display: block;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    max-width: 10%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    padding-right: 0;
+}
+button{
+    background-color: #0077B6;
+    color: white;
+    border-radius: 7px;
+    padding: 4px 4px 4px 4px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+button a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+.part{
+    display: block;
+    top: 1;
+    display: flex;
+    text-align: center;
+}
+.item h3, .item p, .item button{
+    margin-left: 20px;
+    align-self: center;
+}
+footer{
+    margin-top: 70px;
+    background-color: #00293f;
+    color: white;
+    padding: 20px;
+    width: 100svw;
+}
+.lass{
+    padding: 10px 10px 10px 1opx ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
+}
+div.grrd p img{
+    width: 2px;
+    position: relative;
+}
+.grrd{
+    margin: 10px 30px 10px 20px ;
+    padding: 10px 20em 1px 20px ;
+}
+div.lass .grrd h4{
+    font-weight: bold;
+    padding: 10px 10px 10px 10px ;
+}
+.lass .grrd h5{
+    font-weight: bold;
+}
+.item h3{
+    font-weight: bold;
+}
+.gallery{
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    margin: 0 0;
+    padding: 0 0;
+
+}
+@media(max-width:767px){
+    .point{
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        width: 90vw;
+        padding-left: 0px ;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .item{
+        margin: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px ;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .prime{
+        padding: none;
+    }
+    .primw:hover, .point:hover, .item:hover{
+        margin: none;
+        padding: none;
+        padding-left: 0px ;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+  
+    }
+    footer{
+        width: 100vw ;
+    }
+    .gallery .item{
+    margin: 20px;
+    display: block;
+}
+.item{
+    margin: 0 ;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    width: 85vw;
+    flex: 1;
+}
+item:hover{
+    padding: none;
+}
+.grrd h5, .grrd p{
+    white-space: nowrap;
+    font-size: 1em;
+}
+
+.gallery .item{
+    
+    display: block;
+}
+.item{
+    margin: 0 ;
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px ;
+    min-width: fit-content;
+    max-width: 40%;
+    flex: 1;
+    padding-right: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.prime img{
+    height: 100%;
+    width: 100%;
+    top: 1;
+    left: 0;
+    position: relative;
+}
+.prime:hover{
+    box-shadow: 2px 2px 2px #f6bb0a;
+}
+.prime{
+    padding: 0 ;
+    margin: 20px ;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 400px; /* Set width to fill the available space */
+    height: 400px; /* Set initial height to 0 */
+    border-radius: 20px;
+}
+.item:hover{
+    box-shadow: 1px 1px 9px rgb(0, 52, 64) ;
+    padding: 1px  1px 1px 1px ;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 226, 7);
+}
+*, .item{
+margin: 0;
+padding: 0;
+width: 80%;
+text-align: center;
+}
+.prime img{
+    text-align: center;
+}
+p{
+    padding-right: 0;
+    margin-right: 0;
+}
+.item, .part,.prime{
+    padding-right: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+div.grrd p img{
+    width: 2px;
+    position: relative;
+}
+.grrd{
+    margin: 0px ;
+    padding: 0px ;
+}
+div.lass .grrd h4{
+    font-weight: bold;
+    padding:0px ;
+}
+.lass .grrd h5{
+    font-weight: bold;
+}
+.item h3{
+    font-weight: bold;
+}
+.lass, .grrd{
+    display: flex;
+        flex-direction: column;
+    }
+}

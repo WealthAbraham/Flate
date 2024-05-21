@@ -1,0 +1,261 @@
+.container {
+    display: contents;
+    background-color: #0c1534;
+}
+
+.sections {
+    display: flex;
+}
+
+body {
+    background-color: #0c1534;
+    color: white;
+}
+
+.hr-container {
+    position: relative;
+    width: 100%;
+}
+
+.hr-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0c1534;
+    padding: 0 10px; /* Adjust as needed */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc; /* Adjust color as needed */
+    margin: 0; /* Remove margin */
+}
+
+.right {
+    flex: 1;
+    padding: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.left {
+    flex: 1;
+    position: ab;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.left img{
+   height: auto;
+   width: 42vw;
+   position: relative;
+   padding-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li a img {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+   
+}
+
+form label {
+    display: flex;
+    text-align: left;
+}
+
+input {
+    background-color: #122051;
+    box-shadow: 1px 1px 4px white;
+    border: 0.4px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 27em;
+    display: block;
+    height: 39px;
+}
+
+input::placeholder {
+    color: rgb(184, 184, 184);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    width: initial;
+    box-shadow: none;
+    border: none;
+    padding: none;
+    margin: none;
+    top: 0;
+    position: absolute;
+}
+
+input[type="checkbox"]:hover {
+    width: initial;
+    box-shadow: 1px 1px 4px rgb(3, 227, 227);
+    border: none;
+    height: 30px;
+    display: block;
+}
+
+input[type="checkbox"] {
+    display: flex;
+    position: relative;
+    text-align: right;
+    display: flex;
+}
+
+.form h5 {
+    position: relative;
+    flex: 1;
+}
+
+.login {
+    margin: 10px 0; /* Adjusted margin */
+}
+
+.acctn {
+    background-color: rgb(23, 79, 138);
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgb(255, 212, 57);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+form p {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.acctn:hover {
+    border: 1px solid rgb(9, 44, 149);
+    background-color: white;
+    color: teal;
+}
+
+.apple {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.login:hover {
+    background-color: white;
+    font-weight: bolder;
+    border: 2px solid black;
+    color: #0c1534;
+}
+
+input:hover {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px #122051;
+    border: 0.4px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 27em;
+    display: block;
+    color: #000000;
+    height: 39px;
+}
+
+input::placeholder:hover {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+.rigg {
+    flex: 1;
+    float: right;
+}
+
+input[type=text]:focus {
+    border: 10px solid rgb(5, 125, 139);
+    background-color: rgb(215, 255, 255);
+}
+
+.plast {
+    display: flex;
+}
+
+.plast label {
+    text-align: left;
+}
+
+.plast h5 {
+    text-align: right;
+}
+
+ul .apple {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .left,
+    .left p,
+    .left img {
+        display: none;
+    }
+
+    .right {
+        width: 100vw;
+        height: 100vh;
+        padding: 20px; /* Adjusted padding */
+    }
+
+    input {
+        width: 100%;
+        height: 2em;
+        margin: 10px 0; /* Adjusted margin */
+        padding: auto;
+    }
+
+    .form {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .icons,
+    .google {
+        margin-left: 0px;
+        padding: none;
+        text-align: center;
+        max-width: 100vw;
+    }
+
+    .apple,
+    .icons {
+        margin: none;
+        padding: none;
+    }
+
+    form {
+        margin: none;
+        padding: none;
+        margin-top: 0px;
+    }
+
+    hr {
+        margin-bottom: 0; /* Remove margin */
+    }
+    .icons {
+    margin: auto;
+    padding: none;
+    text-align: center; /* Align icons at the center */
+    max-width: 100vw;
+}
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="LogiHub.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sections">
+            <div class="left">
+                <p>
+                    <img src="Frame.png" alt="">
+                </p>
+            </div>
+            <div class="right">
+                <h2>Welcome Back!</h2>
+                <p>Et laoreet est gravida sociis arcu risus faucibus ac.</p>
+                <br>
+                <div class="icons">
+                    <ul>
+                        <li><a href="#"><img src="google.png" alt="" class="google"></a></li>
+                        <li><a href="#"><img src="apple.png" alt=""></a></li>
+                        <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                    </ul>
+                    <div class="hr-container">
+                        <hr>
+                        <div class="hr-text">OR</div>
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="/login" method="post" id="loginForm">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="@gmail.com" name="username" class="email" id="email" required><br>
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your Password" name="password" class="pwd" id="password" required><br>
+                        <div class="plast">
+                            <input type="checkbox" name="verify" id="verify">
+                            <label for="verify">Remember Me</label> <a href="#" id="resetPassword">Reset Password?</a>
+                        </div>
+                        <br><br>
+                        <input type="submit" value="LOGIN" class="login" id="loginButton">
+                        <p>Don’t have an account? <a href="signup.html" class="acctn">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("#loginForm");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
+
+                fetch("/login", {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Redirect to dashboard.html after successful login
+                    if (data.message === 'Login successful') {
+                        alert('Login successful');
+                        setTimeout(() => {
+                            window.location.href = "dashboard.html";
+                        }, 2000);
+                    } else {
+                        alert('Invalid username or password');
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,740 @@
+.topSection{
+   padding-bottom: 15px;
+}
+.step{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+.topData{
+    margin-bottom: 15px;
+}
+.step h5 a{
+    text-align: center;
+}
+.step h2, .step p{
+    color: black;
+}
+.beneath{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.colz2{
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    padding: 0;
+    margin: 0;
+    display: contents;
+    height: 100svh;
+    width: 100vw;
+}
+
+.topSection {
+    position: relative; /* Make the container relative */
+    color: white;
+    display: inline;
+    width: 100%vw;
+    padding-top: 0px;
+    padding-left: 4px;
+}
+
+.homeNav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+header::before {
+content: none;
+position: relative;
+top: 1;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("cover.jpeg");
+background-size: 100%;
+background-position: top;
+background-repeat: no-repeat;
+filter: brightness(30%) contrast(120%) saturate(150%) hue-rotate(20deg);
+z-index: -1;
+min-width: 100vw;
+min-height: 100vh;
+overflow: hidden;
+z-index: -1; /* Send the pseudo-element behind the content */
+
+}
+header{
+    
+    padding-bottom: 10px;
+    background: url('cover.jpeg');
+    min-width: 100vw;
+    min-height: 100vh;
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("cover.jpeg");
+    background-size: 100%; /* Ensure the background image covers the entire pseudo-element */
+    background-position: top; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    
+    min-width: 100vw;
+    min-height: 100vh;
+    position: ;
+    filter: none;
+}
+.step h2{
+    color: white;
+}
+.step p{
+    color: white;
+}
+.homeNav li {
+    padding-left: 10px;
+    display: inline-block; /* Display list items inline */
+    margin-right: 0px; /* Adjust spacing between list items */
+}
+
+.loginNav{
+    padding-left: 10px;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 0;
+    padding-right: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+.loginNav li{
+    display: flex;
+    flex: 2;
+    position: relative;
+    flex-wrap: nowrap;
+}
+.rrr{
+    text-align: right;
+    justify-content: right;
+    align-content: start;
+}
+.navTop{
+    display: flex;
+    position: relative;
+    align-items: flex-start ;
+    justify-content: space-between;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.homeNav ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.nevermind{
+    flex: 1;
+}
+
+.nevermind {
+    display: inline;
+    align-items: center;
+    padding: 10px 10px 0 0;
+}
+#pss{
+   white-space: nowrap;
+   display: flex;
+   flex-wrap: nowrap;
+    color: #f4f4f4;
+}
+h5.reqBtn a{
+    background-color: #0077B6;
+    color: white;
+    font-weight: bold;
+    border-color: #00B4D8;
+    text-align: center;
+    border-radius: 4px ;
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 10px;
+}
+body {
+    background-color: white;
+    background-size: 100;
+    position: relative;
+}
+.metaSp{
+    display: flex;
+    padding: 0 19px 0 19px;
+    align-content: flex-start;
+    justify-content: center;
+    flex: 4;
+    background-color: #F5F5FF;
+    position: relative;
+    margin-top: 0;
+}
+.sponsor{
+    flex: 2;
+    margin: 0 0 10px 0 ;
+    align-items: center;
+    text-align: justify;
+    margin: 0 4px 0 2px ;
+    color: #b0b0b3;
+}
+
+.topData{
+    align-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.whiteSpace{
+    display: flex;
+    padding-bottom: 20px ;
+
+}
+
+.colz2{
+    margin: 3px 30px 3px -0px ;
+    align-self: flex-end;
+    padding: 0 7px 0 7px;
+    flex: 1;
+    flex-grow: 1;
+    padding: px ;
+    border: 1px solid rgb(249, 248, 254);
+    flex-grow: 2;
+    margin: 0px 10px 0px 10px  ;
+    align-content: center;
+    text-align: center;
+}
+table{
+    background-color: #F5F5FF;
+    text-align: center;
+}
+td h4{
+    padding: 10px 10px px 10px;
+    font-size: 17px;
+    font-weight:bold;
+    font-size: 13px;
+    padding-bottom: 0 ;
+
+}
+td{
+    text-align: center;
+    padding:  3px 10px 2px 4px ;
+}
+body{
+    padding: 0 0 0 0;
+    border: 1px solid black;
+    max-width: 100vw;
+    max-height: auto;
+}
+.container{
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+.colz2:last-child {
+    margin-left: auto; 
+}
+li a{
+    color: #c9c9cc;
+    font-weight: lighter;
+}
+.reqbtn a{
+    padding: 10px 10px 10px 10px;
+    margin: 10px ;
+}
+li a:hover{
+    font-weight: bolder;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.reg{
+    padding: 4px ;
+    margin-left: 4px ;
+}
+.blues{
+    display: inline-flex;
+    margin: 70px 70px 10px 10px;
+    position: relative;
+    background-color: #0C1534;
+    color: white;
+    flex: 1;
+    border-radius: 17px;
+    padding: 40px 40px 40px 40px ;
+    margin: 20px 50px 2px 50px;
+}
+.whiteSpace{
+    display :flex;
+     flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    
+}
+.blues img{
+    max-height: 400px;
+    flex: 2;
+    padding: 10px 30px 10px px;
+    border-radius: 30px;
+}
+.blutex h3 p{
+    font-size: 28px;
+    font-weight: bold;
+}
+.blutex p{
+    font-size: 15px;
+    font-weight: lighter;
+}
+.blutex p a{
+    color: white;
+    background-color: #0077B6;
+    padding: 5px 5px  5px 5px;
+    border-radius: 10px ;
+}
+.blutex p a:hover{
+    color: #ffffff;
+    background-color: rgb(0, 57, 66);
+    padding: 5px 5px  5px 5px;
+    border-radius: 10px ;
+    box-shadow: 1px 1px 1px   #ffca2a;
+    border: 1px solid rgb(255, 217, 128);
+    font-weight: bold;
+}
+.blutex{
+    margin: 4px  ;
+}
+ul li #register:hover{
+    background-color: #00293f;
+    color: #8be0ff;
+    font-weight: bold;
+    border:1px solid  #ffea00; 
+
+}
+.reg{
+    margin-right: 20px;
+    background-color: #0077B6; 
+    font-weight: 100; 
+    padding: 10px 10px 10px 7px; 
+    border:1px solid  #073232; 
+    color: white; 
+    box-shadow: 0.2px 0.2px 0.3px rgb(117, 117, 8); 
+    border-radius: 4px ;
+}
+.mapview::after {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    background: url('cover.jpeg');
+     width: 100vw;
+     height: auto;
+    filter: brightness(30%) contrast(120%) saturate(150%) hue-rotate(20deg);
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("map.jpeg");
+    background-size: 100%; /* Ensure the background image covers the entire pseudo-element */
+    background-position: top; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    z-index: -1; /* Send the pseudo-element behind the content */
+    
+}
+.plag{
+    background-color: E6E6FA;
+    margin-bottom: none;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.homeNav li a{
+    color: white;
+    font-weight: 300;
+    font-size: 1em;
+}
+.mapview::before {
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("map.jpeg");
+background-size: 100%;
+background-position: left top;
+background-repeat: no-repeat;
+margin-bottom: 0;
+filter: brightness(100%) contrast(130%) saturate(150%) hue-rotate(20deg);
+
+}
+.mapview{
+position: relative;
+filter: none;
+margin-top: 10px;
+}
+.mapview .pretx h4{
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 1px 2% 10px 10px ;
+    padding: 0 20px ;
+}
+.mapview .pretx p{
+    margin: 1px 20px 10px 10px ;
+    padding: 0 20px ;
+    font-weight: 700;
+}
+.gridv{
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px 0px 0 20px ;
+}
+li{
+    list-style-type: none;
+    list-style: none;
+}
+.boxtex{
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px ;
+    border: 1px solid rgba(241, 241, 241, 0.5);
+    box-shadow: 1px 1px 1px rgb(73, 73, 73);
+}
+.plee{
+    list-style-type: none;
+}
+.nevermind{
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+}
+.boxtex:hover{
+    background-color: #ffffff;    
+    border: 1px solid rgb(0, 33, 131);
+}
+.boxtex p span {
+    font-weight: bolder;
+    padding: 0 0 0 0 ;
+    margin: 0 0 0 0;
+    flex: 1;
+}
+.boxtex img{
+    height: 7em;
+    width: 7em;
+    border-radius: 40px;
+    box-shadow: 1px 1px 3px rgb(255, 157, 0);
+    margin-top: 10px;
+    margin-right: 10px ;
+    border: 0.5px solid rgb(174, 174, 174);
+}
+footer{
+    background-color: #00293f;
+    color: white;
+    padding: 20px;
+}
+.lass{
+    padding: 10px 10px 10px 1opx ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
+}
+div.grrd p img{
+    width: 2px;
+    position: relative;
+}
+.grrd{
+    margin: 10px 30px 10px 20px ;
+    padding: 10px 20em 1px 20px ;
+}
+div.lass .grrd h4{
+    font-weight: bold;
+    padding: 10px 10px 10px 10px ;
+}
+.lass .grrd h5{
+    font-weight: bold;
+}
+.step{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+td{
+    padding: 10px 30px 10px 30px ;
+    flex: 1;
+}
+tr{
+    display: flex;
+}
+ul li a:active{
+    color: white;
+}
+.bluimg img:hover{
+    border: 0.5px solid  rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(255, 225, 0);
+}
+td:hover{
+    box-shadow: 1px 1px 10px rgb(0, 8, 35);
+}
+.colz2 h4:hover{
+    box-shadow: 1px 1px 7px rgb(156, 170, 170);    
+}
+.blues:hover{
+    box-shadow: 1px 1px 10px rgb(27, 26, 26);
+    border: 1px solid rgb(255, 252, 230);
+}
+#reqBtn:hover{
+    padding: 20px 20px 10px 10px;
+    color: teal;
+}
+.dlve{
+    padding: 10px;
+    border-radius: 20px;
+}
+.dlve:hover{
+    background-color: #F5F5FF;
+    color: #0077B6;
+    border: 4px solid #003e4b;
+}
+.homeNav li a:hover{
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+header::before {
+    position: relative;
+    background: url('cover.jpeg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    filter: brightness(30%) contrast(120%) saturate(150%) hue-rotate(20deg);
+    min-height: 100vh;
+    width: 100%; ;
+    padding-bottom: 10px;
+}
+
+/* Adjusting spacing between header and sponsor section */
+.sponsor {
+    margin-top: 0; /* Add this to remove top margin */
+}
+
+/* Adjusting spacing within sponsor section */
+.metaSp {
+    margin-top: 0; /* Add this to remove top margin */
+}
+
+.navTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4px;
+}
+
+.homeNav,
+.loginNav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.homeNav li,
+.loginNav li {
+    padding-left: 10px;
+}
+
+.homeNav li a,
+.loginNav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.homeNav li a:hover,
+.loginNav li a:hover {
+    font-weight: bold;
+}
+
+/* Step section styles */
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    margin-top: 15px;
+}
+
+.step h2,
+.step p {
+    color: white; /* Assuming you want white text for these elements */
+}
+
+
+.step h5 a {
+    background-color: #0077B6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.step h5 a:hover {
+    background-color: #005e8a;
+}
+
+/* Other section styles */
+/* Add styles for other sections as needed */
+
+.dlve:hover{
+    color: #003a59;
+    background-color: whitesmoke;
+}
+
+@media (max-width:768px){
+.metaSp{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.sponsor {
+    max-width:100vw ;
+}
+.colz2{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.beneath{
+     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.whiteSpace{
+     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+tbody tr{
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.blues{
+     flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    
+}
+.pretx{
+    position: relative;
+    display: block;
+    word-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: none;
+    padding:4px;
+}
+.container{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.bluimg{
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 4px;
+    margin-bottom: auto;
+}
+.mapview{
+    display :flex;
+     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+} 
+.pretx{
+     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    white-space: wrap;
+    position: relative;
+    margin: none;
+    padding: none;
+}
+.pretx p{
+    display: block;
+    white-space: wrap;
+    margin: 2px;
+    padding: none;
+}
+.gridv{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: none;
+    padding: 2px;
+}
+.step{
+    margin-top: 2px;
+}
+.lass, .grrd{
+    display: flex;
+        flex-direction: column;
+    }
+    
+.dlve:hover{
+    color: #0077B6;
+    background-color: whitesmoke;
+}
+}

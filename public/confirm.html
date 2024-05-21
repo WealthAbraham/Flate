@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Payment</title>
+    <link rel="shortcut icon" href="LogiHub.png" type="image/x-icon">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+    <script type="text/babel" src="like_widget.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="confirm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script>
+        var confirmCount = 0;
+    
+        function cashPay() {
+    // Show loader initially for 1 second
+    document.getElementById("loader").style.visibility = "visible";
+    setTimeout(function() {
+        document.getElementById("loader").style.display = "none";
+        
+        // Show cashh after hiding the loader
+        document.getElementById("cashh").style.visibility = "visible";
+        // Start the animation by adding a class to the element
+        document.getElementById("cashh").classList.add("animateCash");
+        
+        // Show container after cashh is visible
+        setTimeout(function() {
+            document.getElementById("container").style.visibility = "visible";
+            document.getElementById("container").style.display = "block";
+        }, 2000); // 1000 milliseconds = 1 second after cashh is visible
+    }, 1000); // 1000 milliseconds = 1 second
+}
+
+    
+        function confam() {
+    confirmCount++; // Increment the confirm count
+    
+    // Check if the image has already been added
+    if (confirmCount === 1) {
+        // Create an image element
+        var img = document.createElement("img");
+        img.src = "confirmed.png"; // Set the image source
+        
+        // Set CSS styles for the image
+        img.style.width = "15em"; // Adjust width as needed
+        img.style.height = "auto"; // Maintain aspect ratio
+        img.style.marginBottom = "0px"; // Add margin to separate from other elements
+        img.style.transform = "translateY(-60%)"; // Move the image up by 60% of its height
+        img.style.paddingBottom = "2px"; 
+
+        document.getElementById("hcashh").style.marginTop = "0px";
+
+        // Insert the image as the first child of the "cashh" div
+        var cashDiv = document.getElementById("cashh");
+        cashDiv.insertBefore(img, cashDiv.firstChild);
+    }
+    
+    // Update confirmation message
+    document.getElementById("hcashh").innerText = "Order Confirmed";
+    
+    // Update styles for confirmation
+    var cashh = document.getElementById("cashh");
+    cashh.style.backgroundColor = "#0077B6";
+    cashh.style.borderRadius = "10px";
+    cashh.style.color = "white";
+    
+    // Update styles for confirmation message
+    var hcashh = document.getElementById("hcashh");
+    hcashh.style.borderRadius = "10px";
+    hcashh.style.color = "white";
+    
+    // Update styles for payment message
+    var pcashh = document.getElementById("pcashh");
+    pcashh.style.color = "azure";
+    
+    // Remove the existing animation class (if any)
+    cashh.classList.remove("animateCash");
+    // Add the new animation class
+    cashh.classList.add("prompt");
+
+    // Get the button inside the "cashh" div
+    var okButton = document.getElementById("okbtn");
+    // Set the border radius and box shadow for the button
+    okButton.style.borderRadius = "10px";
+    okButton.style.boxShadow = "0 1px 7px white";
+    
+    // Check if the function is called the second time
+    if (confirmCount === 2) {
+        // Delay the redirection by 2 seconds (2000 milliseconds)
+        setTimeout(function() {
+            // Redirect to the dashboard page after 2 seconds
+            window.location.href = "dashboard.html";
+        }, 1000);
+    }
+}
+</script>
+    
+    
+<body>
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <div class="logo">
+                <img src="LogiHub.png" alt="LogiHub_Logo">
+            </div>
+            <div class="rolmid">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="split.html">Become a Vendor</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="ppic">
+                <a href="profile">
+                    <img src="profilepp.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+            <div class="content">
+                <div class="toptext">
+                    <h3>
+                        Request  Parcel Delivery
+                    </h3>
+                </div>
+            <div class="details">
+                    <div class="stage">
+                        <h2 href="delivery.html">1</h2><hr> <h2 href="payment.html" class="here">2 </h2><hr><h2 href="confirm.html">3</h2>
+                    </div>
+                    <div class="place">
+                        <h2 class="pri1">Shipping </h2><hr> <h2 class="pri2">Payment  </h2><hr><h2 class="pri3">Confirmation</h2>
+<br>
+<br><br><br>
+</div>
+
+<br><br>
+<div class="colom">
+     <div class="press">
+                <div class="dest" style="text-align:right; font-weight:bold;">
+                <p>Pickup</p>
+                <br>
+                <p>D1</p>
+               </div>
+               <div class="shape">
+                   <p>
+                       <img src="Group 4.png" alt=""><br>
+                   </p>
+                   <div class="link"></div>
+                   <p>
+                       <img src="Vector.png" alt=""></img>
+                   </p>
+               </div>
+    <div class="left">
+        <div class="locat">
+           
+            </div>
+            <div class="fieldet">
+                <input type="text" placeholder="Magic Land, No. 1, Kukwaba Hills, Constitution Ave, Wuye, Abuja" disabled>
+                <br>
+                <input type="text" placeholder="Jabi Lake Mall, Bala Sokoto Way, Jabi 900108, Abuja" disabled>
+            </div>
+             <div class="doww">
+            <div class="ldoww">
+                <h6>
+                    Gokada
+                </h6>
+                <h6 style="color:#020231B2;font-weight:lighter;">35km • 20min</h6>
+                <h6>2min away from you</h6>
+                
+            </div>
+            <div class="rdoww">
+                    <h4 style="color:#0077B6 ;">₦1,700</h4>
+                    
+                </div>
+        </div>
+        <hr>
+        
+        <hr>
+       <div class="method">
+            <div class="metl"style="text-align:left;">
+                <p style="font-weight:bold; ">Payment Method</p>
+    
+            </div>
+            <div class="metr" id="txnx" style="text-align:right;">
+                Cash on Delivery
+            </div>
+            
+       </div>
+       <hr>
+       <br>
+        <div class="submit" style="text-align: center;">
+                <button onclick="cashPay()" class="Proceed" style=" background-color: #0077B6; color: white; border-radius: 3px ; border: none; padding-top: 1px ; padding-bottom: 1px; padding-left: 10px ; padding-right: 10px;">
+                   <a href="#" style="color: white; text-decoration: none; ">Proceed</a>
+                </button>
+            </div>
+            
+        </div>
+           
+    </div>
+
+<div class="right" style="flex:1;">
+               
+           </div> 
+       </div>
+        <footer>
+            <div class="footdiv">
+                <div class="lass">
+                    <div class="ggrd">
+                        <h4>
+                            LOGIHUB<sup>&reg;</sup>
+                        </h4>
+                        <p><img src="Frame 40.png" alt=""></p>
+                    </div>
+                    <div class="ggrd"><h5>Company</h5><p>
+                        Contact us
+                    </p>
+                    </div>
+                    <div class="ggrd">
+                        <h5>Legal</h5><p>
+                            Privacy Policy
+                        </p>
+                        <p>Terms of Service</p>
+                    </div>
+                    <div class="ggrd">
+                        <h5>Help</h5>
+                        <p>Read our FAQs</p>
+                    </div>
+                </div>
+                <hr>
+                <p>Copyright&copy; 2024 LogiHub<sup>&reg;</sup>. All rights reserved.</p>
+
+            </div>
+        </footer>
+        
+        
+        
+        <div class="cashh" id="cashh" style="transform:translate(-50%, -50%); position: fixed;justify-content:center;align-items:center; background-color:white; box-shadow: 0px 1px 10px black;top:50%; left: 50%; padding:10px;align-content:center;height:auto ; width :auto; text-align:center;border-radius:20px; visibility: hidden;">
+    <h3 style="text-align:center; font-size:3em; font-weight:bolder; color:#020231; white-space:nowrap; " id="hcashh">Cash Payment</h3>
+    <p style="text-align:center; font-size:25px; font-weight:bold;" id="pcashh">Please pay to the dispatch at the pickup location</p>
+    <br>
+    <button onclick="confam()" id="okbtn" style="text-align:center; font: size 2em; font-weight:bold; padding: 10px 55px; border:none;box-shadow: 0px 1px 10px black; background-color:#0077B6; color:white; transition: easein-out; margin-bottom:20px">OK</button>
+</div>
+</div>
+
+</body>
+<script>
+    
+</script>
+<div class="loader" id="loader"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Fetch user's address from server
+        $.ajax({
+            url: '/user/address',
+            method: 'GET',
+            success: function(response) {
+                // Replace the placeholder with the user's address
+                $('.addressed').attr('placeholder', response.address);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching user address:', error);
+            }
+        });
+    });
+</script>
+</html>

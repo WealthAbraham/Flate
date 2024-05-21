@@ -1,0 +1,298 @@
+
+footer{
+    margin-top: 70px;
+    background-color: #00293f;
+    color: white;
+    padding: 20px;
+    width: 100svw;
+}
+.ppic a img {
+    border-radius: 100px;
+    width: 3em; /* Set width to fill the container */
+    height: 3em; /* Maintain aspect ratio */
+    position: relative;
+     /* Float the image to the right */
+    border: 1px solid rgb(214, 214, 214);
+    top: 1;
+    right: 1;
+}
+.ppic a img:hover {
+    box-shadow: 1px 1px 8px #0077B6;
+    border: none;
+}
+.ppic a {
+    position: relative;
+    width: 200px; /* Set width to a specific value or adjust as needed */
+    height: 20px; /* Set height to match the width for a square aspect ratio */
+    overflow: hidden; /* Ensure image doesn't overflow the container */
+    top: 1;
+}
+
+.lass{
+    padding: 10px 10px 10px 1opx ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
+}
+div.grrd p img{
+    width: 2px;
+    position: relative;
+}
+.grrd{
+    margin: 10px 30px 10px 20px ;
+    padding: 10px 20em 1px 20px ;
+}
+div.lass .grrd h4{
+    font-weight: bold;
+    padding: 10px 10px 10px 10px ;
+}
+.lass .grrd h5{
+    font-weight: bold;
+}
+.pri1 hr{
+    background-color: black;
+    height: 4px;
+    border: 1px solid black;
+}
+
+body{
+    height: 100svh;
+    width: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100svh;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    padding: 10px 0 10px ;
+}
+.topnav{
+    display: flex;
+    margin: 20px 20px 10px 10px;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+}
+.logo{
+    flex: 1;
+    float: left;
+}
+.rolmid{
+    flex-direction: unset;
+    flex: 2;
+    margin-left: 44px ;
+}
+.ppic{
+    flex: 2;
+    float: right;
+    position: relative;
+    align-self: flex-start;
+    float: right;
+}
+.rolmid ul{
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+    color: #020231;
+}
+.rolmid ul li{
+    margin: 0 10px 0 10px ;
+    padding-left: 10px ;
+}
+.rolmid ul li a{
+    color: #020231;
+    margin-top: 10px;
+}
+.rolmid ul li a:hover{
+    text-decoration: none;
+    background-color: #0077B6;
+    padding: 4px ;
+    border-radius: 4px ;
+    color: white;
+    
+}
+.ppic a img {
+    border-radius: 100px;
+    width: 3em; /* Set width to fill the container */
+    height: 3em; /* Maintain aspect ratio */
+    position: relative;
+     /* Float the image to the right */
+    border: 1px solid rgb(214, 214, 214);
+    top: 1;
+    right: 1;
+}
+.ppic a img:hover {
+    box-shadow: 1px 1px 8px #0077B6;
+    border: none;
+}
+.ppic a {
+    position: relative;
+    width: 200px; /* Set width to a specific value or adjust as needed */
+    height: 20px; /* Set height to match the width for a square aspect ratio */
+    overflow: hidden; /* Ensure image doesn't overflow the container */
+    top: 1;
+}
+
+
+.stage{
+    display: flex;
+    background-color: #f2f3f3;
+    border-radius: 20px;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    padding-left: 10px ;
+    padding-right: 10px;
+    width: 100vw;
+    margin-bottom: 0;
+    width: 97vw;
+}
+.stage h2:nth-child(){
+    background-color: #fbfbfb;
+    border-radius: 30px;
+    color: #03419f;
+    box-shadow: 1px 1px 3px #0077B6;
+    font-weight: bold;
+    
+}
+.stage h2{
+    background-color: #0077B6;
+    padding-left: 40px ;
+    padding-right: 20px ;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    border-radius: 30px;
+    color: white;
+}
+.stage h2:hover{
+    box-shadow: 1px 1px 4px rgb(247, 161, 0);
+}
+.toptext h3{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.details:hover{
+    box-shadow: 2px 2px 4px rgb(177, 177, 177);
+    padding-top: 20px ;
+    padding-bottom: 10px;
+
+}
+.place{
+     display: flex;
+}
+.pri1{
+    text-align: left;
+}
+.pri2{
+    text-align: center;
+}
+.pri3{
+    text-align: right;
+}
+.pri1, .pri2, .pri3{
+    font-size: 13px ;
+    padding-left: 40px ;
+    padding-right: 20px ;
+    padding-top: 0;
+    padding-bottom: 10px ;
+    margin-top: 0;
+}
+
+.content{
+    width: 99vw;
+    display: block;
+}
+.forms{
+    display: flex;
+}
+.form1, .form2{
+    margin-left: 20px ;
+    margin-right: 10px ;
+    display:block ;
+}
+.form2{
+    text-align: left;
+    float: right;
+}
+.forms select, .forms input{
+    background-color: #F5F5FF;
+    width: 100%;
+    height: 29px;
+    border: none;
+    border-radius: 4px;
+}
+#code{
+    width: initial;
+}
+.pot{
+    display: flex;
+}
+.pot input{
+    margin: 2px ;
+}
+select{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #b3b3b3;
+}
+input:hover{
+    background-color: white;
+    border: 1px solid rgb(228, 228, 228);
+}
+select:hover{
+    background-color: white;
+    border: 1px solid rgb(228, 228, 228);
+}
+input:active{
+    background-color: rgb(175, 175, 175);
+    border: 1px solid rgb(0, 0, 0);
+}
+select:hover{
+    background-color: white;
+    border: 1px solid rgb(228, 228, 228);
+}
+#form1{
+    flex: 1;
+}
+.form2 {
+
+}
+.forms h3{
+    font-size: 20px ;
+}
+button:hover{
+    box-shadow: 1px 1px 2px #ff3300;
+    border: 2px solid rgb(255, 225, 55);
+}
+.submit .Proceed a{
+    font-size: 20px;
+    color: white; 
+}
+.submit .Proceed a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+#form1:hover{
+    box-shadow: 1px 1px 3px #636363;
+    padding: 10px ;
+}
+/* Style for the placeholder text of text inputs */
+input[type="text"]:active{
+    color: #000000; /* Change placeholder text color */
+    padding: 2px 2px 2px ;
+}
+
+@media(max-width:768px){
+    .forms{
+        flex-direction: column;
+    }
+    .lass, .grrd{
+    display: flex;
+        flex-direction: column;
+    }
+}
