@@ -47,7 +47,7 @@ app.get('/signup', (req, res) => {
 
 // Handle sign up form submission
 app.post('/signup', async (req, res) => {
-  // Signup logic
+  // Implement signup logic here
 });
 
 // Display login form
@@ -57,7 +57,7 @@ app.get('/login', (req, res) => {
 
 // Handle login form submission
 app.post('/login', async (req, res) => {
-  // Login logic
+  // Implement login logic here
 });
 
 // Middleware to check if user is logged in
@@ -76,7 +76,7 @@ app.get('/dashboard', checkAuth, (req, res) => {
 
 // Handle request to fetch user's address
 app.get('/user/address', checkAuth, async (req, res) => {
-  // Fetch user's address
+  // Implement logic to fetch user's address here
 });
 
 // Error handling middleware
